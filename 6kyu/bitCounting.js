@@ -1,3 +1,3 @@
 var countBits = function(n) {
-  return +(n.toString(2).split("").reduce( (a, b) => +a + +b));
+  return n.toString(2).split('0').join('').length;
 };
